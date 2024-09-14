@@ -2,25 +2,19 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSHealthUpdateUsageDescription</key>
-	<string>이 앱은 운동 데이터를 기록하기 위해 HealthKit에 액세스합니다.</string>
-	<key>NSHealthShareUsageDescription</key>
-	<string>이 앱은 운동 중 심박수 데이터를 읽기 위해 HealthKit에 액세스합니다.</string>
-	<key>UIApplicationSceneManifest</key>
-	<false/>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>audio</string>
 	</array>
 	<key>UILaunchScreen</key>
 	<false/>
+	<key>WKAppBundleIdentifier</key>
+	<string>lyh.fitness.metronome</string>
 	<key>WKBackgroundModes</key>
 	<array>
 		<string>workout-processing</string>
 		<string>audio</string>
 	</array>
-	<key>WKAppBundleIdentifier</key>
-	<string>lyh.fitness.metronome</string>
 	<key>WKComplicationEnabled</key>
 	<true/>
 	<key>WKWatchKitAppBundleIdentifier</key>

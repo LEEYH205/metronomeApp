@@ -10,7 +10,8 @@
 		EA5F8B162C9578600087E0A7 /* Info-WatchApp.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA35BFAE2C9575F600A03669 /* Info-WatchApp.plist */; };
 		EA5F8B182C9579760087E0A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F8B172C9579760087E0A7 /* ContentView.swift */; };
 		EA5F8B1A2C9579800087E0A7 /* metronomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F8B192C9579800087E0A7 /* metronomeApp.swift */; };
-		EA5F8B1D2C957E020087E0A7 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F8B1C2C957E020087E0A7 /* ExtensionDelegate.swift */; };
+		EA5F8B1F2C95BA3E0087E0A7 /* BackgroundMetronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F8B1E2C95BA3E0087E0A7 /* BackgroundMetronome.swift */; };
+		EAD9528C2C95CF59002E23AA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F8B1C2C957E020087E0A7 /* ExtensionDelegate.swift */; };
 		EADE55A92C946954007260C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EADE55A82C946954007260C7 /* Assets.xcassets */; };
 		EADE55AC2C946954007260C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EADE55AB2C946954007260C7 /* Preview Assets.xcassets */; };
 		EADE55B62C946954007260C7 /* metronomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADE55B52C946954007260C7 /* metronomeTests.swift */; };
@@ -66,6 +67,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		EA8485FD2C95CBCD000D81C4 /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA8486132C95CC0F000D81C4 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EADE55F02C946955007260C7 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -85,6 +106,8 @@
 		EA5F8B192C9579800087E0A7 /* metronomeApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = metronomeApp.swift; sourceTree = "<group>"; };
 		EA5F8B1B2C957A280087E0A7 /* metronome Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "metronome Watch App.entitlements"; sourceTree = "<group>"; };
 		EA5F8B1C2C957E020087E0A7 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		EA5F8B1E2C95BA3E0087E0A7 /* BackgroundMetronome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMetronome.swift; sourceTree = "<group>"; };
+		EA8486072C95CC0F000D81C4 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		EADE55A12C946952007260C7 /* metronome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = metronome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EADE55A82C946954007260C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EADE55AB2C946954007260C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -154,6 +177,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA8486062C95CC0F000D81C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA8486072C95CC0F000D81C4 /* Intents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EADE55982C946952007260C7 = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +194,7 @@
 				EADE55CB2C946954007260C7 /* metronome Watch App */,
 				EADE55DC2C946955007260C7 /* metronome Watch AppTests */,
 				EADE55E62C946955007260C7 /* metronome Watch AppUITests */,
+				EA8486062C95CC0F000D81C4 /* Frameworks */,
 				EADE55A22C946952007260C7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -228,6 +260,7 @@
 				EADE56022C946B76007260C7 /* tick.mp3 */,
 				EADE55D02C946955007260C7 /* Assets.xcassets */,
 				EADE55D22C946955007260C7 /* Preview Content */,
+				EA5F8B1E2C95BA3E0087E0A7 /* BackgroundMetronome.swift */,
 				EA5F8B1C2C957E020087E0A7 /* ExtensionDelegate.swift */,
 			);
 			path = "metronome Watch App";
@@ -323,6 +356,8 @@
 				EADE55C32C946954007260C7 /* Sources */,
 				EADE55C42C946954007260C7 /* Frameworks */,
 				EADE55C52C946954007260C7 /* Resources */,
+				EA8485FD2C95CBCD000D81C4 /* Embed ExtensionKit Extensions */,
+				EA8486132C95CC0F000D81C4 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -511,7 +546,8 @@
 			files = (
 				EADE55CF2C946954007260C7 /* ContentView.swift in Sources */,
 				EADE55CD2C946954007260C7 /* metronomeApp.swift in Sources */,
-				EA5F8B1D2C957E020087E0A7 /* ExtensionDelegate.swift in Sources */,
+				EAD9528C2C95CF59002E23AA /* ExtensionDelegate.swift in Sources */,
+				EA5F8B1F2C95BA3E0087E0A7 /* BackgroundMetronome.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,6 +719,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "metronome Watch App/metronome Watch App.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"metronome Watch App/Preview Content\"";
@@ -691,10 +728,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/metronome/Info-WatchApp.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = metronome;
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "이 앱은 운동 세션을 기록하기 위해 HealthKit 데이터에 접근합니다.";
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "이 앱은 운동 세션을 기록하기 위해 HealthKit 데이터를 업데이트합니다.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "이 앱은 운동 중 심박수 데이터를 읽기 위해 HealthKit에 액세스합니다.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "이 앱은 운동 데이터를 기록하기 위해 HealthKit에 액세스합니다.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = lyh.fitness.metronome;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
 				INFOPLIST_PREPROCESS = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -703,6 +741,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = lyh.fitness.metronome.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -718,6 +757,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "metronome Watch App/metronome Watch App.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"metronome Watch App/Preview Content\"";
@@ -726,10 +766,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/metronome/Info-WatchApp.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = metronome;
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "이 앱은 운동 세션을 기록하기 위해 HealthKit 데이터에 접근합니다.";
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "이 앱은 운동 세션을 기록하기 위해 HealthKit 데이터를 업데이트합니다.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "이 앱은 운동 중 심박수 데이터를 읽기 위해 HealthKit에 액세스합니다.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "이 앱은 운동 데이터를 기록하기 위해 HealthKit에 액세스합니다.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = lyh.fitness.metronome;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
 				INFOPLIST_PREPROCESS = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -738,6 +779,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = lyh.fitness.metronome.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
