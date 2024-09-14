@@ -17,6 +17,15 @@
 	<key>WKBackgroundModes</key>
 	<array>
 		<string>workout-processing</string>
+		<string>audio</string>
 	</array>
+	<key>WKAppBundleIdentifier</key>
+	<string>lyh.fitness.metronome</string>
+	<key>WKComplicationEnabled</key>
+	<true/>
+	<key>WKWatchKitAppBundleIdentifier</key>
+	<string>lyh.fitness.metronome.watchkitapp</string>
+	<key>WKWatchKitExtensionBundleIdentifier</key>
+	<string>lyh.fitness.metronome.watchkitextension</string>
 </dict>
 </plist>

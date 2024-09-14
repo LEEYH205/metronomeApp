@@ -58,7 +58,7 @@ class BackgroundMetronome: NSObject, ObservableObject {
             self?.playTickSound()
             self?.triggerHapticFeedback()
         }
-        startWorkoutSession()
+        //startWorkoutSession()
     }
     
     // 메트로놈을 멈춤
@@ -67,7 +67,7 @@ class BackgroundMetronome: NSObject, ObservableObject {
         metronomeTimer?.invalidate()
         metronomeTimer = nil
         audioPlayer?.stop()
-        endWorkoutSession()
+        //endWorkoutSession()
     }
     
     // 템포 변경 시 메트로놈을 다시 시작

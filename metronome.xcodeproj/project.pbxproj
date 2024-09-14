@@ -10,6 +10,7 @@
 		EA5F8B162C9578600087E0A7 /* Info-WatchApp.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA35BFAE2C9575F600A03669 /* Info-WatchApp.plist */; };
 		EA5F8B182C9579760087E0A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F8B172C9579760087E0A7 /* ContentView.swift */; };
 		EA5F8B1A2C9579800087E0A7 /* metronomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F8B192C9579800087E0A7 /* metronomeApp.swift */; };
+		EA5F8B1D2C957E020087E0A7 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F8B1C2C957E020087E0A7 /* ExtensionDelegate.swift */; };
 		EADE55A92C946954007260C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EADE55A82C946954007260C7 /* Assets.xcassets */; };
 		EADE55AC2C946954007260C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EADE55AB2C946954007260C7 /* Preview Assets.xcassets */; };
 		EADE55B62C946954007260C7 /* metronomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADE55B52C946954007260C7 /* metronomeTests.swift */; };
@@ -83,6 +84,7 @@
 		EA5F8B172C9579760087E0A7 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EA5F8B192C9579800087E0A7 /* metronomeApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = metronomeApp.swift; sourceTree = "<group>"; };
 		EA5F8B1B2C957A280087E0A7 /* metronome Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "metronome Watch App.entitlements"; sourceTree = "<group>"; };
+		EA5F8B1C2C957E020087E0A7 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		EADE55A12C946952007260C7 /* metronome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = metronome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EADE55A82C946954007260C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EADE55AB2C946954007260C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				EADE56022C946B76007260C7 /* tick.mp3 */,
 				EADE55D02C946955007260C7 /* Assets.xcassets */,
 				EADE55D22C946955007260C7 /* Preview Content */,
+				EA5F8B1C2C957E020087E0A7 /* ExtensionDelegate.swift */,
 			);
 			path = "metronome Watch App";
 			sourceTree = "<group>";
@@ -508,6 +511,7 @@
 			files = (
 				EADE55CF2C946954007260C7 /* ContentView.swift in Sources */,
 				EADE55CD2C946954007260C7 /* metronomeApp.swift in Sources */,
+				EA5F8B1D2C957E020087E0A7 /* ExtensionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
