@@ -7,34 +7,160 @@
 import SwiftUI
 import AVFoundation
 import WatchKit
+import HealthKit
+
+class BackgroundMetronome: NSObject, ObservableObject {
+    @Published var tempo: Int = 120
+    @Published var isPlaying: Bool = false
+    
+    private var audioPlayer: AVAudioPlayer?
+    private var metronomeTimer: Timer?
+    private let hapticFeedback = WKInterfaceDevice.current()
+    
+    // HealthKit 관련 설정
+    private let healthStore = HKHealthStore()
+    private var workoutSession: HKWorkoutSession?
+    private var builder: HKLiveWorkoutBuilder?
+    
+    override init() {
+        super.init()
+        prepareSound()
+        setupAudioSession()
+        requestWorkoutAuthorization()
+    }
+    
+    // 오디오 파일을 로드하여 메트로놈 소리 준비
+    func prepareSound() {
+        if let path = Bundle.main.path(forResource: "tick", ofType: "mp3") {
+            let url = URL(fileURLWithPath: path)
+            audioPlayer = try? AVAudioPlayer(contentsOf: url)
+            audioPlayer?.prepareToPlay()
+            audioPlayer?.numberOfLoops = -1 // 무한 반복
+        }
+    }
+    
+    // 오디오 세션 설정
+    func setupAudioSession() {
+        do {
+            let audioSession = AVAudioSession.sharedInstance()
+            try audioSession.setCategory(.playback, mode: .default, options: [.mixWithOthers])
+            try audioSession.setActive(true)
+        } catch {
+            print("오디오 세션 설정 실패: \(error)")
+        }
+    }
+    
+    // 메트로놈을 시작
+    func startMetronome() {
+        isPlaying = true
+        let interval = 60.0 / Double(tempo)
+        metronomeTimer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true) { [weak self] _ in
+            self?.playTickSound()
+            self?.triggerHapticFeedback()
+        }
+        startWorkoutSession()
+    }
+    
+    // 메트로놈을 멈춤
+    func stopMetronome() {
+        isPlaying = false
+        metronomeTimer?.invalidate()
+        metronomeTimer = nil
+        audioPlayer?.stop()
+        endWorkoutSession()
+    }
+    
+    // 템포 변경 시 메트로놈을 다시 시작
+    func updateMetronomeTempo() {
+        if isPlaying {
+            stopMetronome()
+            startMetronome()
+        }
+    }
+    
+    // 소리 재생
+    func playTickSound() {
+        audioPlayer?.stop()
+        audioPlayer?.currentTime = 0
+        audioPlayer?.play()
+    }
+    
+    // 진동 재생
+    func triggerHapticFeedback() {
+        hapticFeedback.play(.click)
+    }
+    
+    // HealthKit 권한 요청
+    func requestWorkoutAuthorization() {
+        let typesToShare: Set = [HKObjectType.workoutType()]
+        let typesToRead: Set = [HKObjectType.quantityType(forIdentifier: .heartRate)!]
+        
+        healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { (success, error) in
+            if !success {
+                print("HealthKit 권한 요청 실패: \(String(describing: error))")
+            }
+        }
+    }
+    
+    // 운동 세션 시작
+    func startWorkoutSession() {
+        let configuration = HKWorkoutConfiguration()
+        configuration.activityType = .other
+        configuration.locationType = .indoor
+        
+        do {
+            workoutSession = try HKWorkoutSession(healthStore: healthStore, configuration: configuration)
+            builder = workoutSession?.associatedWorkoutBuilder()
+            builder?.dataSource = HKLiveWorkoutDataSource(healthStore: healthStore, workoutConfiguration: configuration)
+            workoutSession?.startActivity(with: Date())
+            builder?.beginCollection(withStart: Date()) { (success, error) in
+                if !success {
+                    print("워크아웃 데이터 수집 시작 실패: \(String(describing: error))")
+                }
+            }
+        } catch {
+            print("워크아웃 세션 시작 실패: \(error)")
+        }
+    }
+    
+    // 운동 세션 종료
+    func endWorkoutSession() {
+        workoutSession?.end()
+        builder?.endCollection(withEnd: Date()) { (success, error) in
+            if !success {
+                print("워크아웃 데이터 수집 종료 실패: \(String(describing: error))")
+            }
+            self.builder?.finishWorkout { (workout, error) in
+                if let error = error {
+                    print("워크아웃 종료 실패: \(error)")
+                }
+            }
+        }
+    }
+}
 
 struct ContentView: View {
-    @State private var tempo: Int = 120  // 기본 템포 (BPM) 120으로 설정
-    @State private var isPlaying: Bool = false
-    @State private var audioPlayer: AVAudioPlayer?
-    @State private var metronomeTimer: DispatchSourceTimer?
-    @State private var crownValue: Double = 120.0  // 디지털 크라운 값도 120으로 설정
-    let hapticFeedback = WKInterfaceDevice.current()
-
+    @StateObject private var metronome = BackgroundMetronome()
+    @State private var crownValue: Double = 120.0
+    
     var body: some View {
         VStack {
-            Text("\(tempo) BPM")
+            Text("\(metronome.tempo) BPM")
                 .font(.system(size: 24))
                 .padding()
-                // 디지털 크라운 회전으로 템포 조정
                 .focusable(true)
                 .digitalCrownRotation($crownValue, from: 20.0, through: 240.0, by: 1.0, sensitivity: .medium, isContinuous: false)
                 .onChange(of: crownValue) { newValue in
-                    tempo = Int(newValue)
-                    updateMetronomeTempo()
+                    metronome.tempo = Int(newValue)
+                    metronome.updateMetronomeTempo()
                 }
-
+            
             HStack {
                 Button(action: {
-                    if tempo > 20 {  // 최소 템포 제한
-                        tempo -= 1
-                        crownValue = Double(tempo)  // 디지털 크라운 값도 업데이트
-                        updateMetronomeTempo()
+                    if metronome.tempo > 20 {
+                        metronome.tempo -= 1
+                        crownValue = Double(metronome.tempo)
+                        metronome.updateMetronomeTempo()
                     }
                 }) {
                     Text("-")
@@ -44,12 +170,12 @@ struct ContentView: View {
                         .foregroundColor(.white)
                         .clipShape(Circle())
                 }
-
+                
                 Button(action: {
-                    if tempo < 240 {  // 최대 템포 제한
-                        tempo += 1
-                        crownValue = Double(tempo)  // 디지털 크라운 값도 업데이트
-                        updateMetronomeTempo()
+                    if metronome.tempo < 240 {
+                        metronome.tempo += 1
+                        crownValue = Double(metronome.tempo)
+                        metronome.updateMetronomeTempo()
                     }
                 }) {
                     Text("+")
@@ -61,86 +187,25 @@ struct ContentView: View {
                 }
             }
             .padding()
-
+            
             Button(action: {
-                isPlaying.toggle()
-                if isPlaying {
-                    startMetronome()
+                if metronome.isPlaying {
+                    metronome.stopMetronome()
                 } else {
-                    stopMetronome()
+                    metronome.startMetronome()
                 }
             }) {
-                Text(isPlaying ? "Stop" : "Start")
+                Text(metronome.isPlaying ? "Stop" : "Start")
                     .font(.system(size: 24))
                     .padding()
-                    .background(isPlaying ? Color.red : Color.green)
+                    .background(metronome.isPlaying ? Color.red : Color.green)
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
         }
         .onAppear {
-            prepareSound()
-            crownValue = Double(tempo)  // 디지털 크라운 값을 템포와 동기화
+            crownValue = Double(metronome.tempo)
         }
-    }
-
-    // 소리 파일 준비
-    func prepareSound() {
-        if let path = Bundle.main.path(forResource: "tick", ofType: "mp3") {
-            let url = URL(fileURLWithPath: path)
-            do {
-                audioPlayer = try AVAudioPlayer(contentsOf: url)
-                audioPlayer?.prepareToPlay()
-            } catch {
-                print("오디오 파일 로드 실패: \(error)")
-            }
-        }
-    }
-
-    // 메트로놈 시작
-    func startMetronome() {
-        let interval = 60.0 / Double(tempo)  // BPM을 초 간격으로 변환
-        metronomeTimer = DispatchSource.makeTimerSource()
-        metronomeTimer?.schedule(deadline: .now(), repeating: interval)
-        
-        metronomeTimer?.setEventHandler {
-            DispatchQueue.main.async {
-                self.playTickSound()
-                self.triggerHapticFeedback()
-            }
-        }
-        metronomeTimer?.resume()
-    }
-
-    // 메트로놈 정지
-    func stopMetronome() {
-        metronomeTimer?.cancel()
-        metronomeTimer = nil
-    }
-
-    // 템포가 변경될 때 메트로놈을 즉시 업데이트
-    func updateMetronomeTempo() {
-        if isPlaying {
-            stopMetronome()  // 현재 타이머 중지
-            startMetronome()  // 새로운 템포로 재시작
-        }
-    }
-
-    // 소리 재생
-    func playTickSound() {
-        audioPlayer?.stop()
-        audioPlayer?.currentTime = 0
-        audioPlayer?.play()
-    }
-
-    // 햅틱 피드백 (진동) 발생
-    func triggerHapticFeedback() {
-        hapticFeedback.play(.click)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
