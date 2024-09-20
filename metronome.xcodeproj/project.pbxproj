@@ -3,31 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EA3E3D7A2C9AB5F500C799D9 /* BackgroundMetronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3E3D6D2C9AB5F500C799D9 /* BackgroundMetronome.swift */; };
-		EA3E3D7B2C9AB5F500C799D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3E3D6E2C9AB5F500C799D9 /* ContentView.swift */; };
-		EA3E3D7C2C9AB5F500C799D9 /* metronomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3E3D712C9AB5F500C799D9 /* metronomeApp.swift */; };
-		EA3E3D7D2C9AB5F500C799D9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3E3D6F2C9AB5F500C799D9 /* ExtensionDelegate.swift */; };
-		EA3E3D7E2C9AB5F500C799D9 /* tick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA3E3D722C9AB5F500C799D9 /* tick.mp3 */; };
-		EA3E3D882C9DA0D800C799D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA3E3D862C9DA0D800C799D9 /* Preview Assets.xcassets */; };
 		EA3E3D8B2C9DA29200C799D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA3E3D892C9DA29200C799D9 /* Preview Assets.xcassets */; };
-		EA5F8B182C9579760087E0A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F8B172C9579760087E0A7 /* ContentView.swift */; };
-		EA5F8B1A2C9579800087E0A7 /* metronomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F8B192C9579800087E0A7 /* metronomeApp.swift */; };
+		EA3E3DCC2C9DADE000C799D9 /* metronome Watch App Extension.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = EA3E3DC32C9DADE000C799D9 /* metronome Watch App Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EA3E3DE42C9DAEDD00C799D9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3E3DE12C9DAEDD00C799D9 /* Interface.storyboard */; };
+		EA3E3DE82C9DAF1300C799D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA3E3DE72C9DAF1300C799D9 /* Assets.xcassets */; };
+		EA3E3DF42C9DBD3C00C799D9 /* metronomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F8B192C9579800087E0A7 /* metronomeApp.swift */; };
+		EA3E3DF52C9DBD4000C799D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F8B172C9579760087E0A7 /* ContentView.swift */; };
+		EA3E3DFE2C9DBFE200C799D9 /* MetromomeKit in Frameworks */ = {isa = PBXBuildFile; productRef = EA3E3DFD2C9DBFE200C799D9 /* MetromomeKit */; };
+		EA3E3E1A2C9DCA6800C799D9 /* MetromomeKit in Resources */ = {isa = PBXBuildFile; fileRef = EA3E3E182C9DCA6800C799D9 /* MetromomeKit */; };
+		EA3E3E1B2C9DCA6800C799D9 /* MetromomeKit in Resources */ = {isa = PBXBuildFile; fileRef = EA3E3E182C9DCA6800C799D9 /* MetromomeKit */; };
 		EADE55A92C946954007260C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EADE55A82C946954007260C7 /* Assets.xcassets */; };
 		EADE55B62C946954007260C7 /* metronomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADE55B52C946954007260C7 /* metronomeTests.swift */; };
 		EADE55C02C946954007260C7 /* metronomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADE55BF2C946954007260C7 /* metronomeUITests.swift */; };
 		EADE55C22C946954007260C7 /* metronomeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADE55C12C946954007260C7 /* metronomeUITestsLaunchTests.swift */; };
 		EADE55C82C946954007260C7 /* metronome Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EADE55C72C946954007260C7 /* metronome Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		EADE55D12C946955007260C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EADE55D02C946955007260C7 /* Assets.xcassets */; };
 		EADE55DE2C946955007260C7 /* metronome_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADE55DD2C946955007260C7 /* metronome_Watch_AppTests.swift */; };
 		EADE55E82C946955007260C7 /* metronome_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADE55E72C946955007260C7 /* metronome_Watch_AppUITests.swift */; };
 		EADE55EA2C946955007260C7 /* metronome_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADE55E92C946955007260C7 /* metronome_Watch_AppUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		EA3E3DCA2C9DADE000C799D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EADE55992C946952007260C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA3E3DC22C9DADE000C799D9;
+			remoteInfo = "metronome Watch App Extension";
+		};
 		EADE55B22C946954007260C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EADE55992C946952007260C7 /* Project object */;
@@ -72,6 +78,7 @@
 			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
 			dstSubfolderSpec = 16;
 			files = (
+				EA3E3DCC2C9DADE000C799D9 /* metronome Watch App Extension.appex in Embed ExtensionKit Extensions */,
 			);
 			name = "Embed ExtensionKit Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,17 +107,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		EA3E3D6D2C9AB5F500C799D9 /* BackgroundMetronome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMetronome.swift; sourceTree = "<group>"; };
-		EA3E3D6E2C9AB5F500C799D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		EA3E3D6F2C9AB5F500C799D9 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		EA3E3D702C9AB5F500C799D9 /* Info-WatchApp.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-WatchApp.plist"; sourceTree = "<group>"; };
-		EA3E3D712C9AB5F500C799D9 /* metronomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metronomeApp.swift; sourceTree = "<group>"; };
-		EA3E3D722C9AB5F500C799D9 /* tick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tick.mp3; sourceTree = "<group>"; };
-		EA3E3D862C9DA0D800C799D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EA3E3D892C9DA29200C799D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EA3E3DC32C9DADE000C799D9 /* metronome Watch App Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = "metronome Watch App Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA3E3DD12C9DAE4500C799D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA3E3DE02C9DAEDD00C799D9 /* Interface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Interface.storyboard; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		EA3E3DE72C9DAF1300C799D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA3E3DED2C9DB73400C799D9 /* MetromomeKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MetromomeKit; path = ../../MetromomeKit; sourceTree = "<group>"; };
+		EA3E3E182C9DCA6800C799D9 /* MetromomeKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MetromomeKit; sourceTree = "<group>"; };
 		EA5F8B172C9579760087E0A7 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EA5F8B192C9579800087E0A7 /* metronomeApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = metronomeApp.swift; sourceTree = "<group>"; };
-		EA5F8B1B2C957A280087E0A7 /* metronome Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "metronome Watch App.entitlements"; sourceTree = "<group>"; };
 		EA8486072C95CC0F000D81C4 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		EADE55A12C946952007260C7 /* metronome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = metronome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EADE55A82C946954007260C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,7 +125,6 @@
 		EADE55BF2C946954007260C7 /* metronomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metronomeUITests.swift; sourceTree = "<group>"; };
 		EADE55C12C946954007260C7 /* metronomeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metronomeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EADE55C72C946954007260C7 /* metronome Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "metronome Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EADE55D02C946955007260C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EADE55D92C946955007260C7 /* metronome Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "metronome Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EADE55DD2C946955007260C7 /* metronome_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metronome_Watch_AppTests.swift; sourceTree = "<group>"; };
 		EADE55E32C946955007260C7 /* metronome Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "metronome Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,11 +134,33 @@
 		EADE56052C947916007260C7 /* metronome.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = metronome.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EA3E3DCD2C9DADE000C799D9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = EA3E3DC22C9DADE000C799D9 /* metronome Watch App Extension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		EA3E3DC42C9DADE000C799D9 /* metronome Watch App Extension */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (EA3E3DCD2C9DADE000C799D9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "metronome Watch App Extension"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		EA3E3DC02C9DADE000C799D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EADE559E2C946952007260C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA3E3DFE2C9DBFE200C799D9 /* MetromomeKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,14 +202,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EA3E3D872C9DA0D800C799D9 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				EA3E3D862C9DA0D800C799D9 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
 		EA3E3D8A2C9DA29200C799D9 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +213,7 @@
 		EA8486062C95CC0F000D81C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA3E3DED2C9DB73400C799D9 /* MetromomeKit */,
 				EA8486072C95CC0F000D81C4 /* Intents.framework */,
 			);
 			name = Frameworks;
@@ -203,10 +222,12 @@
 		EADE55982C946952007260C7 = {
 			isa = PBXGroup;
 			children = (
+				EA3E3E182C9DCA6800C799D9 /* MetromomeKit */,
 				EADE55A32C946952007260C7 /* metronome */,
 				EADE55B42C946954007260C7 /* metronomeTests */,
 				EADE55BE2C946954007260C7 /* metronomeUITests */,
 				EADE55CB2C946954007260C7 /* metronome Watch App */,
+				EA3E3DC42C9DADE000C799D9 /* metronome Watch App Extension */,
 				EADE55DC2C946955007260C7 /* metronome Watch AppTests */,
 				EADE55E62C946955007260C7 /* metronome Watch AppUITests */,
 				EA8486062C95CC0F000D81C4 /* Frameworks */,
@@ -223,6 +244,7 @@
 				EADE55C72C946954007260C7 /* metronome Watch App.app */,
 				EADE55D92C946955007260C7 /* metronome Watch AppTests.xctest */,
 				EADE55E32C946955007260C7 /* metronome Watch AppUITests.xctest */,
+				EA3E3DC32C9DADE000C799D9 /* metronome Watch App Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -236,7 +258,6 @@
 				EADE56052C947916007260C7 /* metronome.entitlements */,
 				EADE56042C9478BC007260C7 /* Info.plist */,
 				EADE55A82C946954007260C7 /* Assets.xcassets */,
-				EA3E3D702C9AB5F500C799D9 /* Info-WatchApp.plist */,
 			);
 			path = metronome;
 			sourceTree = "<group>";
@@ -261,14 +282,9 @@
 		EADE55CB2C946954007260C7 /* metronome Watch App */ = {
 			isa = PBXGroup;
 			children = (
-				EA3E3D872C9DA0D800C799D9 /* Preview Content */,
-				EA3E3D6D2C9AB5F500C799D9 /* BackgroundMetronome.swift */,
-				EA3E3D6E2C9AB5F500C799D9 /* ContentView.swift */,
-				EA3E3D6F2C9AB5F500C799D9 /* ExtensionDelegate.swift */,
-				EA5F8B1B2C957A280087E0A7 /* metronome Watch App.entitlements */,
-				EADE55D02C946955007260C7 /* Assets.xcassets */,
-				EA3E3D712C9AB5F500C799D9 /* metronomeApp.swift */,
-				EA3E3D722C9AB5F500C799D9 /* tick.mp3 */,
+				EA3E3DE12C9DAEDD00C799D9 /* Interface.storyboard */,
+				EA3E3DD12C9DAE4500C799D9 /* Info.plist */,
+				EA3E3DE72C9DAF1300C799D9 /* Assets.xcassets */,
 			);
 			path = "metronome Watch App";
 			sourceTree = "<group>";
@@ -293,6 +309,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		EA3E3DC22C9DADE000C799D9 /* metronome Watch App Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA3E3DCE2C9DADE000C799D9 /* Build configuration list for PBXNativeTarget "metronome Watch App Extension" */;
+			buildPhases = (
+				EA3E3DBF2C9DADE000C799D9 /* Sources */,
+				EA3E3DC02C9DADE000C799D9 /* Frameworks */,
+				EA3E3DC12C9DADE000C799D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA3E3E172C9DCA0100C799D9 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EA3E3DC42C9DADE000C799D9 /* metronome Watch App Extension */,
+			);
+			name = "metronome Watch App Extension";
+			packageProductDependencies = (
+			);
+			productName = "metronome Watch App Extension";
+			productReference = EA3E3DC32C9DADE000C799D9 /* metronome Watch App Extension.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
 		EADE55A02C946952007260C7 /* metronome */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EADE55F12C946955007260C7 /* Build configuration list for PBXNativeTarget "metronome" */;
@@ -305,6 +344,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				EA3E3DF32C9DBD0F00C799D9 /* PBXTargetDependency */,
 				EADE55CA2C946954007260C7 /* PBXTargetDependency */,
 			);
 			name = metronome;
@@ -361,6 +401,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				EA3E3DCB2C9DADE000C799D9 /* PBXTargetDependency */,
 			);
 			name = "metronome Watch App";
 			productName = "metronome Watch App";
@@ -411,8 +452,11 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					EA3E3DC22C9DADE000C799D9 = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					EADE55A02C946952007260C7 = {
 						CreatedOnToolsVersion = 15.0.1;
 						LastSwiftMigration = 1500;
@@ -447,6 +491,8 @@
 				Base,
 			);
 			mainGroup = EADE55982C946952007260C7;
+			packageReferences = (
+			);
 			productRefGroup = EADE55A22C946952007260C7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -455,6 +501,7 @@
 				EADE55B02C946954007260C7 /* metronomeTests */,
 				EADE55BA2C946954007260C7 /* metronomeUITests */,
 				EADE55C62C946954007260C7 /* metronome Watch App */,
+				EA3E3DC22C9DADE000C799D9 /* metronome Watch App Extension */,
 				EADE55D82C946955007260C7 /* metronome Watch AppTests */,
 				EADE55E22C946955007260C7 /* metronome Watch AppUITests */,
 			);
@@ -462,11 +509,19 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EA3E3DC12C9DADE000C799D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EADE559F2C946952007260C7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EA3E3D8B2C9DA29200C799D9 /* Preview Assets.xcassets in Resources */,
+				EA3E3E1A2C9DCA6800C799D9 /* MetromomeKit in Resources */,
 				EADE55A92C946954007260C7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,9 +544,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EADE55D12C946955007260C7 /* Assets.xcassets in Resources */,
-				EA3E3D882C9DA0D800C799D9 /* Preview Assets.xcassets in Resources */,
-				EA3E3D7E2C9AB5F500C799D9 /* tick.mp3 in Resources */,
+				EA3E3DE42C9DAEDD00C799D9 /* Interface.storyboard in Resources */,
+				EA3E3E1B2C9DCA6800C799D9 /* MetromomeKit in Resources */,
+				EA3E3DE82C9DAF1300C799D9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,12 +567,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EA3E3DBF2C9DADE000C799D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EADE559D2C946952007260C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA5F8B1A2C9579800087E0A7 /* metronomeApp.swift in Sources */,
-				EA5F8B182C9579760087E0A7 /* ContentView.swift in Sources */,
+				EA3E3DF52C9DBD4000C799D9 /* ContentView.swift in Sources */,
+				EA3E3DF42C9DBD3C00C799D9 /* metronomeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,10 +604,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA3E3D7A2C9AB5F500C799D9 /* BackgroundMetronome.swift in Sources */,
-				EA3E3D7B2C9AB5F500C799D9 /* ContentView.swift in Sources */,
-				EA3E3D7C2C9AB5F500C799D9 /* metronomeApp.swift in Sources */,
-				EA3E3D7D2C9AB5F500C799D9 /* ExtensionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +627,19 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		EA3E3DCB2C9DADE000C799D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA3E3DC22C9DADE000C799D9 /* metronome Watch App Extension */;
+			targetProxy = EA3E3DCA2C9DADE000C799D9 /* PBXContainerItemProxy */;
+		};
+		EA3E3DF32C9DBD0F00C799D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = EA3E3DF22C9DBD0F00C799D9 /* MetromomeKit */;
+		};
+		EA3E3E172C9DCA0100C799D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = EA3E3E162C9DCA0100C799D9 /* MetromomeKit */;
+		};
 		EADE55B32C946954007260C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EADE55A02C946952007260C7 /* metronome */;
@@ -596,7 +667,77 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		EA3E3DE12C9DAEDD00C799D9 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA3E3DE02C9DAEDD00C799D9 /* Interface.storyboard */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		EA3E3DCF2C9DADE000C799D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SHNWQ646HR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "metronome Watch App Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "metronome Watch App Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "lyh.fitness.metronome.watchkitapp.metronome-Watch-App-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		EA3E3DD02C9DADE000C799D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SHNWQ646HR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "metronome Watch App Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "metronome Watch App Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "lyh.fitness.metronome.watchkitapp.metronome-Watch-App-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
 		EADE55EB2C946955007260C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -631,6 +772,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -693,6 +835,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -726,7 +869,7 @@
 				DEVELOPMENT_TEAM = SHNWQ646HR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "";
+				INFOPLIST_FILE = "metronome Watch App/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = metronome;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "이 앱은 운동 중 심박수 데이터를 읽기 위해 HealthKit에 액세스합니다.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "이 앱은 운동 데이터를 기록하기 위해 HealthKit에 액세스합니다.";
@@ -764,7 +907,7 @@
 				DEVELOPMENT_TEAM = SHNWQ646HR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "";
+				INFOPLIST_FILE = "metronome Watch App/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = metronome;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "이 앱은 운동 중 심박수 데이터를 읽기 위해 HealthKit에 액세스합니다.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "이 앱은 운동 데이터를 기록하기 위해 HealthKit에 액세스합니다.";
@@ -1025,6 +1168,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EA3E3DCE2C9DADE000C799D9 /* Build configuration list for PBXNativeTarget "metronome Watch App Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA3E3DCF2C9DADE000C799D9 /* Debug */,
+				EA3E3DD02C9DADE000C799D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EADE559C2C946952007260C7 /* Build configuration list for PBXProject "metronome" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1089,6 +1241,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EA3E3DF22C9DBD0F00C799D9 /* MetromomeKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MetromomeKit;
+		};
+		EA3E3DFD2C9DBFE200C799D9 /* MetromomeKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MetromomeKit;
+		};
+		EA3E3E162C9DCA0100C799D9 /* MetromomeKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MetromomeKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EADE55992C946952007260C7 /* Project object */;
 }
