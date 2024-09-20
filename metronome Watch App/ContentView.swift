@@ -7,6 +7,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject private var extensionDelegate: ExtensionDelegate
+    
     @StateObject private var metronome = BackgroundMetronome()
     @State private var crownValue: Double = 120.0
     

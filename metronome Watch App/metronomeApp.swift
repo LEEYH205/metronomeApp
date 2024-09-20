@@ -14,5 +14,13 @@ struct metronome_Watch_AppApp: App {
         WindowGroup {
             ContentView()
         }
+        .backgroundTask(.appRefresh) { context in
+            // Handles any other app refresh tasks.
+            await withTaskCancellationHandler {
+                // Handle the background refresh task.
+            } onCancel: {
+                // Clean up and prepare to become suspended.
+            }
+        }
     }
 }

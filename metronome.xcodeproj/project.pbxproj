@@ -7,25 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EA5F8B162C9578600087E0A7 /* Info-WatchApp.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA35BFAE2C9575F600A03669 /* Info-WatchApp.plist */; };
+		EA3E3D7A2C9AB5F500C799D9 /* BackgroundMetronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3E3D6D2C9AB5F500C799D9 /* BackgroundMetronome.swift */; };
+		EA3E3D7B2C9AB5F500C799D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3E3D6E2C9AB5F500C799D9 /* ContentView.swift */; };
+		EA3E3D7C2C9AB5F500C799D9 /* metronomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3E3D712C9AB5F500C799D9 /* metronomeApp.swift */; };
+		EA3E3D7D2C9AB5F500C799D9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3E3D6F2C9AB5F500C799D9 /* ExtensionDelegate.swift */; };
+		EA3E3D7E2C9AB5F500C799D9 /* tick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA3E3D722C9AB5F500C799D9 /* tick.mp3 */; };
+		EA3E3D882C9DA0D800C799D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA3E3D862C9DA0D800C799D9 /* Preview Assets.xcassets */; };
+		EA3E3D8B2C9DA29200C799D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA3E3D892C9DA29200C799D9 /* Preview Assets.xcassets */; };
 		EA5F8B182C9579760087E0A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F8B172C9579760087E0A7 /* ContentView.swift */; };
 		EA5F8B1A2C9579800087E0A7 /* metronomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F8B192C9579800087E0A7 /* metronomeApp.swift */; };
-		EA5F8B1F2C95BA3E0087E0A7 /* BackgroundMetronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F8B1E2C95BA3E0087E0A7 /* BackgroundMetronome.swift */; };
-		EAD9528C2C95CF59002E23AA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F8B1C2C957E020087E0A7 /* ExtensionDelegate.swift */; };
 		EADE55A92C946954007260C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EADE55A82C946954007260C7 /* Assets.xcassets */; };
-		EADE55AC2C946954007260C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EADE55AB2C946954007260C7 /* Preview Assets.xcassets */; };
 		EADE55B62C946954007260C7 /* metronomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADE55B52C946954007260C7 /* metronomeTests.swift */; };
 		EADE55C02C946954007260C7 /* metronomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADE55BF2C946954007260C7 /* metronomeUITests.swift */; };
 		EADE55C22C946954007260C7 /* metronomeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADE55C12C946954007260C7 /* metronomeUITestsLaunchTests.swift */; };
 		EADE55C82C946954007260C7 /* metronome Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EADE55C72C946954007260C7 /* metronome Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		EADE55CD2C946954007260C7 /* metronomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADE55CC2C946954007260C7 /* metronomeApp.swift */; };
-		EADE55CF2C946954007260C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADE55CE2C946954007260C7 /* ContentView.swift */; };
 		EADE55D12C946955007260C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EADE55D02C946955007260C7 /* Assets.xcassets */; };
-		EADE55D42C946955007260C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EADE55D32C946955007260C7 /* Preview Assets.xcassets */; };
 		EADE55DE2C946955007260C7 /* metronome_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADE55DD2C946955007260C7 /* metronome_Watch_AppTests.swift */; };
 		EADE55E82C946955007260C7 /* metronome_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADE55E72C946955007260C7 /* metronome_Watch_AppUITests.swift */; };
 		EADE55EA2C946955007260C7 /* metronome_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADE55E92C946955007260C7 /* metronome_Watch_AppUITestsLaunchTests.swift */; };
-		EADE56032C946B76007260C7 /* tick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EADE56022C946B76007260C7 /* tick.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,32 +100,32 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		EA35BFAE2C9575F600A03669 /* Info-WatchApp.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-WatchApp.plist"; sourceTree = "<group>"; };
+		EA3E3D6D2C9AB5F500C799D9 /* BackgroundMetronome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMetronome.swift; sourceTree = "<group>"; };
+		EA3E3D6E2C9AB5F500C799D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EA3E3D6F2C9AB5F500C799D9 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		EA3E3D702C9AB5F500C799D9 /* Info-WatchApp.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-WatchApp.plist"; sourceTree = "<group>"; };
+		EA3E3D712C9AB5F500C799D9 /* metronomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metronomeApp.swift; sourceTree = "<group>"; };
+		EA3E3D722C9AB5F500C799D9 /* tick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tick.mp3; sourceTree = "<group>"; };
+		EA3E3D862C9DA0D800C799D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EA3E3D892C9DA29200C799D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EA5F8B172C9579760087E0A7 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EA5F8B192C9579800087E0A7 /* metronomeApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = metronomeApp.swift; sourceTree = "<group>"; };
 		EA5F8B1B2C957A280087E0A7 /* metronome Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "metronome Watch App.entitlements"; sourceTree = "<group>"; };
-		EA5F8B1C2C957E020087E0A7 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		EA5F8B1E2C95BA3E0087E0A7 /* BackgroundMetronome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMetronome.swift; sourceTree = "<group>"; };
 		EA8486072C95CC0F000D81C4 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		EADE55A12C946952007260C7 /* metronome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = metronome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EADE55A82C946954007260C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EADE55AB2C946954007260C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EADE55B12C946954007260C7 /* metronomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = metronomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EADE55B52C946954007260C7 /* metronomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metronomeTests.swift; sourceTree = "<group>"; };
 		EADE55BB2C946954007260C7 /* metronomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = metronomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EADE55BF2C946954007260C7 /* metronomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metronomeUITests.swift; sourceTree = "<group>"; };
 		EADE55C12C946954007260C7 /* metronomeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metronomeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EADE55C72C946954007260C7 /* metronome Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "metronome Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EADE55CC2C946954007260C7 /* metronomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metronomeApp.swift; sourceTree = "<group>"; };
-		EADE55CE2C946954007260C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EADE55D02C946955007260C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EADE55D32C946955007260C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EADE55D92C946955007260C7 /* metronome Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "metronome Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EADE55DD2C946955007260C7 /* metronome_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metronome_Watch_AppTests.swift; sourceTree = "<group>"; };
 		EADE55E32C946955007260C7 /* metronome Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "metronome Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EADE55E72C946955007260C7 /* metronome_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metronome_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		EADE55E92C946955007260C7 /* metronome_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metronome_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		EADE56022C946B76007260C7 /* tick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tick.mp3; sourceTree = "<group>"; };
 		EADE56042C9478BC007260C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EADE56052C947916007260C7 /* metronome.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = metronome.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,6 +176,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA3E3D872C9DA0D800C799D9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EA3E3D862C9DA0D800C799D9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EA3E3D8A2C9DA29200C799D9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EA3E3D892C9DA29200C799D9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		EA8486062C95CC0F000D81C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,23 +230,15 @@
 		EADE55A32C946952007260C7 /* metronome */ = {
 			isa = PBXGroup;
 			children = (
+				EA3E3D8A2C9DA29200C799D9 /* Preview Content */,
 				EA5F8B192C9579800087E0A7 /* metronomeApp.swift */,
 				EA5F8B172C9579760087E0A7 /* ContentView.swift */,
-				EA35BFAE2C9575F600A03669 /* Info-WatchApp.plist */,
 				EADE56052C947916007260C7 /* metronome.entitlements */,
 				EADE56042C9478BC007260C7 /* Info.plist */,
 				EADE55A82C946954007260C7 /* Assets.xcassets */,
-				EADE55AA2C946954007260C7 /* Preview Content */,
+				EA3E3D702C9AB5F500C799D9 /* Info-WatchApp.plist */,
 			);
 			path = metronome;
-			sourceTree = "<group>";
-		};
-		EADE55AA2C946954007260C7 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				EADE55AB2C946954007260C7 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		EADE55B42C946954007260C7 /* metronomeTests */ = {
@@ -254,24 +261,16 @@
 		EADE55CB2C946954007260C7 /* metronome Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				EA3E3D872C9DA0D800C799D9 /* Preview Content */,
+				EA3E3D6D2C9AB5F500C799D9 /* BackgroundMetronome.swift */,
+				EA3E3D6E2C9AB5F500C799D9 /* ContentView.swift */,
+				EA3E3D6F2C9AB5F500C799D9 /* ExtensionDelegate.swift */,
 				EA5F8B1B2C957A280087E0A7 /* metronome Watch App.entitlements */,
-				EADE55CC2C946954007260C7 /* metronomeApp.swift */,
-				EADE55CE2C946954007260C7 /* ContentView.swift */,
-				EADE56022C946B76007260C7 /* tick.mp3 */,
 				EADE55D02C946955007260C7 /* Assets.xcassets */,
-				EADE55D22C946955007260C7 /* Preview Content */,
-				EA5F8B1E2C95BA3E0087E0A7 /* BackgroundMetronome.swift */,
-				EA5F8B1C2C957E020087E0A7 /* ExtensionDelegate.swift */,
+				EA3E3D712C9AB5F500C799D9 /* metronomeApp.swift */,
+				EA3E3D722C9AB5F500C799D9 /* tick.mp3 */,
 			);
 			path = "metronome Watch App";
-			sourceTree = "<group>";
-		};
-		EADE55D22C946955007260C7 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				EADE55D32C946955007260C7 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		EADE55DC2C946955007260C7 /* metronome Watch AppTests */ = {
@@ -411,7 +410,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
+				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					EADE55A02C946952007260C7 = {
@@ -467,7 +466,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EADE55AC2C946954007260C7 /* Preview Assets.xcassets in Resources */,
+				EA3E3D8B2C9DA29200C799D9 /* Preview Assets.xcassets in Resources */,
 				EADE55A92C946954007260C7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,10 +489,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA5F8B162C9578600087E0A7 /* Info-WatchApp.plist in Resources */,
-				EADE55D42C946955007260C7 /* Preview Assets.xcassets in Resources */,
 				EADE55D12C946955007260C7 /* Assets.xcassets in Resources */,
-				EADE56032C946B76007260C7 /* tick.mp3 in Resources */,
+				EA3E3D882C9DA0D800C799D9 /* Preview Assets.xcassets in Resources */,
+				EA3E3D7E2C9AB5F500C799D9 /* tick.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,10 +542,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EADE55CF2C946954007260C7 /* ContentView.swift in Sources */,
-				EADE55CD2C946954007260C7 /* metronomeApp.swift in Sources */,
-				EAD9528C2C95CF59002E23AA /* ExtensionDelegate.swift in Sources */,
-				EA5F8B1F2C95BA3E0087E0A7 /* BackgroundMetronome.swift in Sources */,
+				EA3E3D7A2C9AB5F500C799D9 /* BackgroundMetronome.swift in Sources */,
+				EA3E3D7B2C9AB5F500C799D9 /* ContentView.swift in Sources */,
+				EA3E3D7C2C9AB5F500C799D9 /* metronomeApp.swift in Sources */,
+				EA3E3D7D2C9AB5F500C799D9 /* ExtensionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,6 +632,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -695,6 +694,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -726,7 +726,7 @@
 				DEVELOPMENT_TEAM = SHNWQ646HR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/metronome/Info-WatchApp.plist";
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_CFBundleDisplayName = metronome;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "이 앱은 운동 중 심박수 데이터를 읽기 위해 HealthKit에 액세스합니다.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "이 앱은 운동 데이터를 기록하기 위해 HealthKit에 액세스합니다.";
@@ -764,7 +764,7 @@
 				DEVELOPMENT_TEAM = SHNWQ646HR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/metronome/Info-WatchApp.plist";
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_CFBundleDisplayName = metronome;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "이 앱은 운동 중 심박수 데이터를 읽기 위해 HealthKit에 액세스합니다.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "이 앱은 운동 데이터를 기록하기 위해 HealthKit에 액세스합니다.";
@@ -793,7 +793,6 @@
 		EADE55F22C946955007260C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
@@ -830,7 +829,6 @@
 		EADE55F32C946955007260C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
@@ -867,7 +865,6 @@
 		EADE55F52C946955007260C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -888,7 +885,6 @@
 		EADE55F62C946955007260C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -910,7 +906,6 @@
 		EADE55F82C946955007260C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SHNWQ646HR;
@@ -930,7 +925,6 @@
 		EADE55F92C946955007260C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SHNWQ646HR;
@@ -951,7 +945,6 @@
 		EADE55FB2C946955007260C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -972,7 +965,6 @@
 		EADE55FC2C946955007260C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -994,7 +986,6 @@
 		EADE55FE2C946955007260C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SHNWQ646HR;
@@ -1014,7 +1005,6 @@
 		EADE55FF2C946955007260C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SHNWQ646HR;

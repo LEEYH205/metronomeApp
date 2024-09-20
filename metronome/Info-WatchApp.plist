@@ -13,6 +13,8 @@
 	<key>WKBackgroundModes</key>
 	<array>
 		<string>workout-processing</string>
+		<string>background-refresh</string>
+		<string>background-fetch</string>
 		<string>audio</string>
 	</array>
 	<key>WKComplicationEnabled</key>
